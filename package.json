@@ -1,0 +1,22 @@
+{
+  "name": "git-test1",
+  "version": "1.0.0",
+  "description": "this is description",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Huy301002/git-test1.git"
+  },
+  "keywords": [
+    "abc"
+  ],
+  "author": "hoang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Huy301002/git-test1/issues"
+  },
+  "homepage": "https://github.com/Huy301002/git-test1#readme"
+}
