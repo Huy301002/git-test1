@@ -1,8 +1,23 @@
-import React, { Component } from "react"
-import{ Players } from '../shared/listOfPlayers' 
-export default class player extends Component {
-render(){
-        return (
+import React from 'react'
+import { Players } from '../shared/listOfPlayers'
+export default function player(){
+  
+    return (
+    <div className='container'>
+        {Players.map((player)=>(
+           <div className='column'>
+           <div className='card'>
+           <img src={player.img}/>
+             <h3>{player.name}</h3>
+             <p className='title'>{player.club}</p>
+             <p><button>Detail</button></p>
+           </div>
+         </div>
+        ))}
+    </div>
+  )
+}
+
             // <div className="container">
             //     <div className="column">
             //         <div className="card">
@@ -53,20 +68,7 @@ render(){
             //         </div>
             //     </div>
             // </div>
-            <div className='container'>
-            {Players.map((player)=>(
-               <div className='column'>
-               <div className='card'>
-               <img src={player.img}/>
-                 <h3>{player.name}</h3>
-                 <p className='title'>{player.club}</p>
-                 <p className="but"><button>Detail</button></p>
-               </div>
-             </div>
-            ))}
-        </div>
+
     
 
-        );
-    }
-}
+ 
